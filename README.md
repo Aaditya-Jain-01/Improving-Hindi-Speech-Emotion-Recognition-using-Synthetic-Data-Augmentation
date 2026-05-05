@@ -44,14 +44,14 @@ cd Improving-Hindi-Speech-Emotion-Recognition
 ```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
-
-# Run training
-python train_transformer_cnn.py --data ./data/augmented
 ```
 
-
----
+# Run training
+```bash
+python train_transformer_cnn.py --data ./data/augmented
+```
 
 ## ▶️ Usage
 Run training with augmented dataset:
