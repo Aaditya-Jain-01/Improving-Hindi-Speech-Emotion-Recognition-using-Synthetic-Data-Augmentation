@@ -1,67 +1,46 @@
-```markdown
 # Improving Hindi Speech Emotion Recognition using Synthetic Data
 
-## 🚀 Overview
-This project addresses the challenge of **Speech Emotion Recognition (SER) in Hindi**, a low‑resource language with limited annotated datasets.  
-We developed a pipeline for **synthetic voice data generation** using HuBERT embeddings and Gaussian interpolation, enabling robust emotion classification across multiple models (SVM, CNN, Transformer‑CNN).
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![HuBERT](https://img.shields.io/badge/HuBERT-Embeddings-orange)
+![Transformer-CNN](https://img.shields.io/badge/Transformer-CNN-lightgrey)
+![GitHub stars](https://img.shields.io/github/stars/Aaditya-Jain-01/Improving-Hindi-Speech-Emotion-Recognition?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Aaditya-Jain-01/Improving-Hindi-Speech-Emotion-Recognition?style=social)
 
 ---
 
-## 🎯 Motivation
-- Hindi has **600M+ speakers**, but lacks high‑quality SER datasets.  
-- Existing augmentation methods often distort emotional consistency.  
-- Our approach generates **synthetic yet emotionally faithful data**, improving generalization and reducing overfitting.
+## 🧠 Overview
+This project focuses on **Speech Emotion Recognition (SER) in Hindi**, a low‑resource language with limited annotated datasets.  
+We developed a pipeline for **synthetic voice data generation** using **HuBERT embeddings** and **Gaussian interpolation**, enabling robust emotion classification across multiple models.  
+
+The system improves generalization across unseen speakers and sentences, addressing the scarcity of high‑quality Hindi SER datasets.
 
 ---
 
-## 🛠️ Methodology
-1. **Data Preprocessing**
-   - Mel‑spectrogram projection and audio decoding.
-   - Dataset organization across emotion categories.
-
-2. **Synthetic Data Generation**
-   - HuBERT‑based embeddings.
-   - Gaussian interpolation for emotion‑consistent augmentation.
-
-3. **Models Evaluated**
-   - Classical ML: SVM, Random Forest.  
-   - Deep Learning: CNN, LSTM, ResNet, Transformer Encoder.  
-   - Hybrid: Transformer‑CNN with feature fusion.
+## ⚙️ Features
+- **Synthetic Data Generation** using Gaussian interpolation on HuBERT embeddings.  
+- **Emotion‑consistent augmentation** that preserves fidelity across emotion classes.  
+- **Baseline models**: SVM, CNN, LSTM, ResNet, Transformer Encoder.  
+- **Hybrid Transformer‑CNN** architecture with feature fusion for improved accuracy.  
+- **Validation metrics**: Fréchet distance, cosine similarity, LOSO/LOAO generalization tests.  
 
 ---
 
-## 📊 Results
-- **Baseline Models:**  
-  - CNN achieved ~62% accuracy, LSTM ~59%, ResNet ~61%.  
-  - Performance limited by small dataset size.
-
-- **Gaussian Interpolation Validation:**  
-  - Fréchet distance and cosine similarity confirmed synthetic data preserved emotional fidelity.  
-  - Distributional overlap between synthetic and real samples was high.
-
-- **Transformer‑CNN on Augmented Data:**  
-  - Macro F1 improved from **0.61 (baseline)** to **0.74 with augmentation**.  
-  - Accuracy improved from **63% to 78%**.  
-  - Stronger generalization across unseen speakers and sentences (LOSO/LOAO tests).
-
-*(Insert confusion matrices, accuracy plots, or spectrograms here for visual impact.)*
+## 📸 Demo
+Example placeholders (replace with your plots/images):
+![Confusion Matrix](images/confusion_matrix.png)
+![Augmentation Sweep](images/augmentation_sweep.png)
 
 ---
 
-## 📂 Repository Structure
-- `Gaussian Interpolation/` – synthetic data generation pipeline.  
-- `RVC Emotion Conversion/` – emotion conversion experiments.  
-- `transformer_with_synth_aug/` – Transformer‑CNN training scripts.  
-- `.gitattributes` / `.gitignore` – repo hygiene.  
-- `LICENSE` – MIT License.
+## 🛠 Installation
+Requires **Python 3.9+**.  
 
----
-
-## ⚡ How to Run
+Clone the repository:
 ```bash
-# Clone the repo
-git clone https://github.com/Aaditya-Jain-01/Improving-Hindi-Speech-Emotion-Recognition-using-Synthetic-Data-Augmentation.git
-cd Improving-Hindi-Speech-Emotion-Recognition-using-Synthetic-Data-Augmentation
+git clone https://github.com/Aaditya-Jain-01/Improving-Hindi-Speech-Emotion-Recognition.git
+cd Improving-Hindi-Speech-Emotion-Recognition
+```
 
 # Install dependencies
 pip install -r requirements.txt
