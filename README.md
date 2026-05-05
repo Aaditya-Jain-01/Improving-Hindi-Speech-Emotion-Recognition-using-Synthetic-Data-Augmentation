@@ -27,9 +27,10 @@ The system improves generalization across unseen speakers and sentences, address
 ---
 
 ## 📸 Demo
-Example placeholders (replace with your plots/images):
+
 ![Confusion Matrix](confusion_matrix.png)
-![Augmentation Sweep](images/augmentation_sweep.png)
+![Mel Similarity Graph](mel_similarity.png)
+![TSNE Visualization Graph](tsne_visualization.png)
 
 ---
 
