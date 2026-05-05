@@ -97,5 +97,5 @@ Key techniques: HuBERT embeddings, Gaussian interpolation, Transformer‑CNN hyb
 ---
 
 ## 🪪 License
-Licensed under the **MIT License**. See `LICENSE` for details.
+Licensed under the **MIT License**.
 
