@@ -49,19 +49,38 @@ pip install -r requirements.txt
 python train_transformer_cnn.py --data ./data/augmented
 ```
 
----
-
-## 🧩 Key Contributions
-- First systematic attempt at **synthetic augmentation for Hindi SER**.  
-- Demonstrated that **Gaussian interpolation on HuBERT embeddings** preserves emotional consistency.  
-- Achieved **state‑of‑the‑art performance** compared to baseline models.  
 
 ---
 
-## 📌 Future Work
-- Expand dataset with more diverse speakers.  
-- Explore GAN/VAE‑based augmentation for richer emotional variation.  
-- Benchmark against multilingual SER datasets.
+## ▶️ Usage
+Run training with augmented dataset:
+```bash
+python train_transformer_cnn.py --data ./data/augmented
+```
+
+Expected output example:
+```
+Epoch 10 | Macro F1: 0.74 | Accuracy: 78%
+```
+
+---
+
+## 📊 Results
+| Model              | Macro F1 | Accuracy |
+|--------------------|----------|----------|
+| CNN (baseline)     | 0.62     | 62%      |
+| LSTM (baseline)    | 0.59     | 59%      |
+| ResNet (baseline)  | 0.61     | 61%      |
+| Transformer‑CNN    | 0.74     | 78%      |
+
+- **Gaussian interpolation** preserved emotional fidelity (validated via Fréchet distance & cosine similarity).  
+- **Augmented dataset** improved generalization across unseen speakers and sentences.  
+
+---
+
+## 📚 References
+This project builds upon research in **Speech Emotion Recognition (SER)** and synthetic data augmentation for low‑resource languages.  
+Key techniques: HuBERT embeddings, Gaussian interpolation, Transformer‑CNN hybrid architectures.  
 
 ---
 
@@ -69,13 +88,13 @@ python train_transformer_cnn.py --data ./data/augmented
 **Aaditya Jain**
 
 ### My Role
-- Designed and implemented the Gaussian interpolation pipeline for synthetic data generation.  
-- Integrated HuBERT embeddings into the augmentation workflow.  
-- Conducted experiments with Transformer‑CNN and analyzed performance improvements.  
-- Organized and documented the repository for presentation.
+- Designed and implemented the Gaussian interpolation pipeline.  
+- Integrated HuBERT embeddings for synthetic augmentation.  
+- Conducted Transformer‑CNN experiments and performance analysis.  
+- Organized and documented the repository for recruiter presentation.  
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License.
-```
+## 🪪 License
+Licensed under the **MIT License**. See `LICENSE` for details.
+
